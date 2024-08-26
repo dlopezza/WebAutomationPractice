@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <parameter name="CHROMEDRIVER_PATH" value=".\src\utils\chromedriver.exe"/>
+    <parameter name="WEBSITE_URL" value="https://www.saucedemo.com/"/>
+
+    <test name="BaseTest">
+        <parameter name="USERNAME" value="standard_user"/>
+        <parameter name="PASSWORD" value="secret_sauce"/>
+        <classes>
+            <class name="com.homework.tests.BaseTest"/>
+        </classes>
+    </test>
+
+    <test name="FirstTest">
+        <parameter name="USERNAME" value="standard_user"/>
+        <parameter name="PASSWORD" value="secret_sauce"/>
+        <parameter name="FIRST_NAME" value="David"/>
+        <parameter name="LAST_NAME" value="Lopez"/>
+        <parameter name="ZIP_CODE" value="123456"/>
+        <classes>
+            <class name="com.homework.tests.FirstTest"/>
+        </classes>
+    </test>
+
+</suite>
